@@ -1,0 +1,23 @@
+{
+    "contact": {
+        "firstName": "Dianery",
+        "lastName": "Marin",
+        "email": "dianerymarin@gmail.com",
+        "favoriteColor": "pink",
+        "birthday": "01/29/2000"
+    },
+    "contact2": {
+        "firstName": "Norma",
+        "lastName": "Flores",
+        "email": "normaflores@gmail.com",
+        "favoriteColor": "blue",
+        "birthday": "06/06/1960"
+    },
+    "contact3": {
+        "firstName": "Mitze",
+        "lastName": "Flores",
+        "email": "mitzeflores@gmail.com",
+        "favoriteColor": "red",
+        "birthday": "07/07/1970"
+    }
+}
