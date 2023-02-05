@@ -8,9 +8,7 @@ content-type: application/json
 {
     "firstName": "Dianery",
     "lastName": "Marin",
-    "email": "dianerymarin@gmail.com",
-    "favoriteColor": "pink",
-    "birthday": "01/29/2000"
+    "post": "Eiusbafewb."
 }
 
 ### PUT post
@@ -21,9 +19,7 @@ content-type: application/json
 {
     "firstName": "Josue",
     "lastName": "Flores",
-    "email": "josueflores@gmail.com",
-    "favoriteColor": "blue",
-    "birthday": "07/06/2002"
+    "post": "Eiusbafewb iluhfl we ef ije flj bldjh bvljhvb ldvb ldkjvbl dsijvbds livjbd slvij lidjbv iu hfilf wklfcb llkcfb sdjcb jh vjdhvb jh liuhf el eweh weuh."
 }
 
 ### DELETE post
@@ -38,9 +34,7 @@ content-type: application/json
 {
     "firstName": "Josue",
     "lastName": "Marin",
-    "email": "josuemarin@gmail.com",
-    "favoriteColor": "blue",
-    "birthday": "07/06/2002"
+    "post": "Eiusbafewb iluhfl we ef ije flj bldjh bvljhvb ldvb ldkjvbl dsijvbds livjbd slvij lidjbv iu hfilf wklfcb llkcfb sdjcb jh vjdhvb jh liuhf el eweh weuh."
 }
 
 ### PUT post
@@ -51,9 +45,7 @@ content-type: application/json
 {
     "firstName": "Josue",
     "lastName": "Flores",
-    "email": "josueflores@gmail.com",
-    "favoriteColor": "blue",
-    "birthday": "07/06/2002"
+    "post": "Eiusbafewb iluhfl we ef ije flj bldjh bvljhvb ldvb ldkjvbl dsijvbds livjbd slvij lidjbv iu hfilf wklfcb llkcfb sdjcb jh vjdhvb jh liuhf el eweh weuh."
 }
 
 ### DELETE post
