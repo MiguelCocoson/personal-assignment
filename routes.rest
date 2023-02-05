@@ -1,8 +1,8 @@
-GET http://localhost:8080/contacts
+GET http://localhost:8080/posts
 
-### Create contact
+### Create post
 
-POST http://localhost:8080/contacts HTTP/1.1
+POST http://localhost:8080/posts HTTP/1.1
 content-type: application/json
 
 {
@@ -13,9 +13,9 @@ content-type: application/json
     "birthday": "01/29/2000"
 }
 
-### PUT contact
+### PUT post
 
-PUT http://localhost:8080/contacts/63bf636b644c41ff91a7ab78 HTTP/1.1
+PUT http://localhost:8080/posts/63bf636b644c41ff91a7ab78 HTTP/1.1
 content-type: application/json
 
 {
@@ -26,13 +26,13 @@ content-type: application/json
     "birthday": "07/06/2002"
 }
 
-### DELETE contact
+### DELETE post
 
-DELETE http://localhost:8080/contacts/63bf636b644c41ff91a7ab78 HTTP/1.1
+DELETE http://localhost:8080/posts/63bf636b644c41ff91a7ab78 HTTP/1.1
 
-### Create contact
+### Create post
 
-POST https://webbackend.onrender.com/contacts HTTP/1.1
+POST https://personal-project.onrender.com/posts HTTP/1.1
 content-type: application/json
 
 {
@@ -43,9 +43,9 @@ content-type: application/json
     "birthday": "07/06/2002"
 }
 
-### PUT contact
+### PUT post
 
-PUT https://webbackend.onrender.com/contacts/63ccdb7abdaa6e5f8ec1b020 HTTP/1.1
+PUT https://personal-project.onrender.com/posts/63ccdb7abdaa6e5f8ec1b020 HTTP/1.1
 content-type: application/json
 
 {
@@ -56,6 +56,6 @@ content-type: application/json
     "birthday": "07/06/2002"
 }
 
-### DELETE contact
+### DELETE post
 
-DELETE https://webbackend.onrender.com/contacts/63ccdb7abdaa6e5f8ec1b020 HTTP/1.1
+DELETE https://personal-project.onrender.com/posts/63ccdb7abdaa6e5f8ec1b020 HTTP/1.1
