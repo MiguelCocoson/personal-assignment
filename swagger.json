@@ -5,7 +5,7 @@
     "description": "Posts API",
     "version": "1.0.0"
   },
-  "host": "webbackend.onrender.com",
+  "host": "personal-project-xijm.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
