@@ -42,13 +42,7 @@
                 "lastName": {
                   "example": "any"
                 },
-                "email": {
-                  "example": "any"
-                },
-                "favoriteColor": {
-                  "example": "any"
-                },
-                "birthday": {
+                "post": {
                   "example": "any"
                 }
               }
