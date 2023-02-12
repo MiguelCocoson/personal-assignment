@@ -6,7 +6,7 @@ const doc = {
     description: 'Posts API'
   },
   host: 'personal-project.onrender.com',
-  schemes: ['https']
+  schemes: ['http']
 };
 
 const outputFile = './swagger.json';

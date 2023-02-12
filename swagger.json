@@ -5,11 +5,9 @@
     "description": "Posts API",
     "version": "1.0.0"
   },
-  "host": "personal-project-xijm.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
-  "schemes": [
-    "https"
-  ],
+  "schemes": ["http"],
   "paths": {
     "/api-docs": {
       "get": {
@@ -18,12 +16,10 @@
         "responses": {}
       }
     },
-    "/posts/": {
+    "/contacts/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [],
         "responses": {
           "200": {
@@ -69,12 +65,10 @@
         }
       }
     },
-    "/posts/{id}": {
+    "/contacts/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
