@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 
-const contactsController = require('../controllers/posts.js');
+const postsController = require('../controllers/posts.js');
 
 router.get('/', postsController.getAll);
 
