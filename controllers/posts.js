@@ -5,7 +5,7 @@ const getAll = (req, res) => {
   mongodb
     .getDb()
     .db()
-    .collection('contacts')
+    .collection('posts')
     .find()
     .toArray((err, lists) => {
       if (err) {
@@ -18,13 +18,13 @@ const getAll = (req, res) => {
 
 const getSingle = (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid contact id to find a contact.');
+    res.status(400).json('Must use a valid post id to find a post.');
   }
   const userId = new ObjectId(req.params.id);
   mongodb
     .getDb()
     .db()
-    .collection('contacts')
+    .collection('posts')
     .find({ _id: userId })
     .toArray((err, result) => {
       if (err) {
@@ -35,26 +35,26 @@ const getSingle = (req, res) => {
     });
 };
 
-const createcontact = async (req, res) => {
-  const contact = {
+const createpost = async (req, res) => {
+  const post = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
     post: req.body.post
   };
-  const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
+  const response = await mongodb.getDb().db().collection('posts').insertOne(post);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
-    res.status(500).json(response.error || 'Some error occurred while creating the contact.');
+    res.status(500).json(response.error || 'Some error occurred while creating the post.');
   }
 };
 
-const updatecontact = async (req, res) => {
+const updatepost = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid contact id to update a contact.');
+    res.status(400).json('Must use a valid post id to update a post.');
   }
   const userId = new ObjectId(req.params.id);
-  const contact = {
+  const post = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
     email: req.body.email,
@@ -64,34 +64,34 @@ const updatecontact = async (req, res) => {
   const response = await mongodb
     .getDb()
     .db()
-    .collection('contacts')
-    .replaceOne({ _id: userId }, contact);
+    .collection('posts')
+    .replaceOne({ _id: userId }, post);
   console.log(response);
   if (response.modifiedCount > 0) {
     res.status(204).send();
   } else {
-    res.status(500).json(response.error || 'Some error occurred while updating the contact.');
+    res.status(500).json(response.error || 'Some error occurred while updating the post.');
   }
 };
 
-const deletecontact = async (req, res) => {
+const deletepost = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid contact id to delete a contact.');
+    res.status(400).json('Must use a valid post id to delete a post.');
   }
   const userId = new ObjectId(req.params.id);
-  const response = await mongodb.getDb().db().collection('contacts').remove({ _id: userId }, true);
+  const response = await mongodb.getDb().db().collection('posts').remove({ _id: userId }, true);
   console.log(response);
   if (response.deletedCount > 0) {
     res.status(204).send();
   } else {
-    res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
+    res.status(500).json(response.error || 'Some error occurred while deleting the post.');
   }
 };
 
 module.exports = {
   getAll,
   getSingle,
-  createcontact,
-  updatecontact,
-  deletecontact
+  createpost,
+  updatepost,
+  deletepost
 };
