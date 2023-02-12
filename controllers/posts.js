@@ -35,7 +35,7 @@ const getSingle = (req, res) => {
     });
 };
 
-const createpost = async (req, res) => {
+const createPost = async (req, res) => {
   const post = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -49,7 +49,7 @@ const createpost = async (req, res) => {
   }
 };
 
-const updatepost = async (req, res) => {
+const updatePost = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
     res.status(400).json('Must use a valid post id to update a post.');
   }
@@ -72,7 +72,7 @@ const updatepost = async (req, res) => {
   }
 };
 
-const deletepost = async (req, res) => {
+const deletePost = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
     res.status(400).json('Must use a valid post id to delete a post.');
   }
@@ -89,7 +89,7 @@ const deletepost = async (req, res) => {
 module.exports = {
   getAll,
   getSingle,
-  createpost,
-  updatepost,
-  deletepost
+  createPost,
+  updatePost,
+  deletePost
 };
