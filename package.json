@@ -1,7 +1,7 @@
 {
   "name": "personal-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Post API",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,5 +29,6 @@
   "devDependencies": {
     "nodemon": "^2.0.20",
     "swagger-autogen": "^2.22.0"
-  }
+  },
+  "homepage": "https://github.com/MiguelCocoson/personal-project#readme"
 }

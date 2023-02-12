@@ -6,9 +6,9 @@ POST http://localhost:8080/posts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Dianery",
-    "lastName": "Marin",
-    "post": "Eiusbafewb."
+    "firstName":"Dianery",
+    "lastName":"Marin",
+    "post":"Eiusbafewb."
 }
 
 ### PUT post
