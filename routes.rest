@@ -8,7 +8,7 @@ content-type: application/json
 {
     "firstName":"Dianery",
     "lastName":"Marin",
-    "post":"Eiusbafewb."
+    "post":"Eius bafewb."
 }
 
 ### PUT post
@@ -24,7 +24,7 @@ content-type: application/json
 
 ### DELETE post
 
-DELETE http://localhost:8080/posts/63bf636b644c41ff91a7ab78 HTTP/1.1
+DELETE http://localhost:8080/posts/63df4decd83a163932b3033c HTTP/1.1
 
 ### Create post
 

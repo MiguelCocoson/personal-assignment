@@ -1,4 +1,4 @@
-const validator = require('../helpers/validate.js');
+const validator = require('../helpers/validate');
 
 const savePost = (req, res, next) => {
   const validationRule = {
